@@ -6,8 +6,8 @@ class Game:
         self.gameID = gameID
         self.dt = dt
         self.prevScore = 0
-        self.currScore
-        self.url = f"https://api-web.nhle.com/v1/gamecenter/{self.game_id}/boxscore"
+        self.currScore = 0
+        self.url = f"https://api-web.nhle.com/v1/gamecenter/{self.gameID}/boxscore"
     
     def poll_goal(self):
         # light weight polling to get most acurate live data
